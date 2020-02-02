@@ -6,6 +6,7 @@
 package boletin18;
 
 import java.util.Random;
+import java.util.Scanner;
 
 /**
  *
@@ -26,5 +27,12 @@ public class Metodos {
             num=rand.nextInt(50)+1;
             array[i]=num;
         }
+    }
+    public void letraDNI(){
+        String letras = "TRWAGMYFPDXBNJZSQVHLCKE";
+        int num;
+        Scanner sc=new Scanner(System.in);
+        num=sc.nextInt();
+        System.out.println("Numero: " + num + " Letras: " + letras.charAt(num % 23));
     }
 }
